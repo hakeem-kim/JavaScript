@@ -36,3 +36,18 @@ console.log(name);
     var age;
 }
 console.log(age);
+
+// 3. Constant
+// favor immutable data type always for a few reasons:
+// - security
+// - thread safety
+// - reduc human mistakes
+const daysInWeek = 7;
+const maxNumber = 5;
+
+// 4. Variable types
+// primitive, single item: number, string, boolean, null, undefiedn, symbol
+// object, box container
+// function, first-class function
+
+// https://youtu.be/OCCpGh4ujb8?t=702  수강
