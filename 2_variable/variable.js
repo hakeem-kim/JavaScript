@@ -46,8 +46,39 @@ const daysInWeek = 7;
 const maxNumber = 5;
 
 // 4. Variable types
-// primitive, single item: number, string, boolean, null, undefiedn, symbol
-// object, box container
-// function, first-class function
+// primitive, single item: number, string, boolean, null, undefiedn, symbol 
+// 더이상 작은 단위로 나눠질 수 없는 한가지 아이템 : ~~
 
-// https://youtu.be/OCCpGh4ujb8?t=702  수강
+// object, box container
+// objcet는 싱글 아이템들을 여러개 묶어서 한 단위로, 한 박스로 관리해주는 것이 object
+
+// function, first-class function
+// first-class function 이란, 
+// 이 프로그램 언어에서는 펑션도 다른 데이터 타입처럼 변수에 할당 가능
+// 파라미터로 인자로도 전달이 가능, 리턴타입으로도 리턴 가능 
+
+const count = 17; // integer 정수
+const size = 17.1; // decimal number 10진수
+console.log(`value: ${count}, type: ${typeof count}`);
+console.log(`value: ${size}, type: ${typeof size}`);
+
+const infinity = 1 / 0;
+const negativeInfinity = -1 / 0;
+const nAn = 'not a number' / 2;
+console.log(infinity);
+console.log(negativeInfinity);
+console.log(nAn); // not A number
+
+// bigInt (fairly new, don't use it yet)
+const bigInt = 124567890124567890124567890124567890124567890n; // over (-2**53) ~ 2*53)
+console.log(`value: ${bigInt}, type: ${typeof bigInt}`);
+
+// string
+const char = 'c';
+const brendan = 'brendan'; // brendan 자바스크립트 창조자 브렌던 아이크
+const greeting = 'hello ' + brendan; // greeting 인사말
+console.log(`value: ${greeting}, type: ${typeof greeting}`);
+const helloBob = `hi ${brendan}!`; // template literals (string)
+console.log(`value: ${helloBob}, type: ${typeof helloBob}`);
+
+// https://youtu.be/OCCpGh4ujb8?t=1065 시작
