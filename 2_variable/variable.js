@@ -79,6 +79,13 @@ const brendan = 'brendan'; // brendan 자바스크립트 창조자 브렌던 아
 const greeting = 'hello ' + brendan; // greeting 인사말
 console.log(`value: ${greeting}, type: ${typeof greeting}`);
 const helloBob = `hi ${brendan}!`; // template literals (string)
-console.log(`value: ${helloBob}, type: ${typeof helloBob}`);
+console.log(`value: ${helloBob}, type: ${typeof helloBob}`); //backtick ` 간편함
+console.log('value: ' + helloBob + ' type: ' + typeof helloBob);
 
-// https://youtu.be/OCCpGh4ujb8?t=1065 시작
+// boolean
+// false: 0, null, undefined, NaN, ''
+// true: any other value
+const canRead = true;
+const test = 3 < 1; // false
+console.log(`value: ${canRead}, type: ${typeof canRead}`);
+console.log(`value: ${test}, type: ${typeof test}`);
