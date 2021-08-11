@@ -101,4 +101,11 @@ console.log(`value: ${x}, type: ${typeof x}`);
 // 맵이나 자료구조에서 고유한 식별자가 필요하거나, 동시에 다발적으로 concurrent하게 일어날 수 있는 코드에서 우선순위를 주고 싶을때 사용
 const symbol1 = Symbol('id');
 const symbol2 = Symbol('id');
-console.log(symbol1 === symbol2);
+console.log(symbol1 === symbol2); // false, 심볼은 동일한 스트링을 작성했어도 다른 심볼로 만들어짐, 주어지는 스트링과 상관없이 고유한 식별자 생성
+
+const gSymbol1 = Symbol.for('id');
+const gSymbol2 = Symbol.for('id');
+console.log(gSymbol1 === gSymbol2); // true Symbol.for를 사용하면 동일한 심볼 생성가능
+
+console.log(`value: ${symbol1.description}, type: ${typeof symbol1}`); // description 넣지 않으면 에러 발생
+
