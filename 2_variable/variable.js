@@ -56,7 +56,6 @@ const maxNumber = 5;
 // first-class function 이란, 
 // 이 프로그램 언어에서는 펑션도 다른 데이터 타입처럼 변수에 할당 가능
 // 파라미터로 인자로도 전달이 가능, 리턴타입으로도 리턴 가능 
-
 const count = 17; // integer 정수
 const size = 17.1; // decimal number 10진수
 console.log(`value: ${count}, type: ${typeof count}`);
@@ -91,9 +90,15 @@ console.log(`value: ${canRead}, type: ${typeof canRead}`);
 console.log(`value: ${test}, type: ${typeof test}`);
 
 // null
-let nothing = null;
+let nothing = null; // 명확하게 null 값 할당
 console.log(`value: ${nothing}, type: ${typeof nothing}`);
 
 // undefined
-let x;
+let x; // 선언은 됐지만 값이 텅텅 비어있음 "let x = undefined" 라고 해도 됨
 console.log(`value: ${x}, type: ${typeof x}`);
+
+// symbol, create unique identifiers for objects
+// 맵이나 자료구조에서 고유한 식별자가 필요하거나, 동시에 다발적으로 concurrent하게 일어날 수 있는 코드에서 우선순위를 주고 싶을때 사용
+const symbol1 = Symbol('id');
+const symbol2 = Symbol('id');
+console.log(symbol1 === symbol2);
