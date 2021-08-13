@@ -106,6 +106,16 @@ console.log(symbol1 === symbol2); // false, 심볼은 동일한 스트링을 작
 const gSymbol1 = Symbol.for('id');
 const gSymbol2 = Symbol.for('id');
 console.log(gSymbol1 === gSymbol2); // true Symbol.for를 사용하면 동일한 심볼 생성가능
+console.log(`value: ${symbol1.description}, type: ${typeof symbol1}`); // .description 넣지 않으면 에러 발생
 
-console.log(`value: ${symbol1.description}, type: ${typeof symbol1}`); // description 넣지 않으면 에러 발생
-
+// 5. Dynmaic typing: dynamically typed language
+let text = 'hello';
+console.log(text.charAt(0)); // h 
+console.log(`value: ${text}, type: ${typeof text}`);
+text = 1;
+console.log(`value: ${text}, type: ${typeof text}`);
+text = '7' + 5;
+console.log(`value: ${text}, type: ${typeof text}`);
+text = '8' / '2';
+console.log(`value: ${text}, type: ${typeof text}`);
+console.log(text.charAt(0)); // 스트링이 아니기 때문에 error, 이런 것 때문에 타입스크립트가 탄생
