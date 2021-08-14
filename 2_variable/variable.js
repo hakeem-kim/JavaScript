@@ -108,6 +108,10 @@ const gSymbol2 = Symbol.for('id');
 console.log(gSymbol1 === gSymbol2); // true Symbol.for를 사용하면 동일한 심볼 생성가능
 console.log(`value: ${symbol1.description}, type: ${typeof symbol1}`); // .description 넣지 않으면 에러 발생
 
+// object, real-life object, data structure
+const hakeem = { name: 'hakeem', age: 26};
+hakeem.age = 19; 
+
 // 5. Dynmaic typing: dynamically typed language
 let text = 'hello';
 console.log(text.charAt(0)); // h 
