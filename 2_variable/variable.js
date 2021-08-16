@@ -4,9 +4,8 @@
 'use strict';
 console.log(age);
 
-// 2. Variable
+// 2. Variable, rw(read/write)
 // let (added in ES6)
-
 
 // Global Scope
 // 블럭 외부에서 접근 가능
@@ -37,19 +36,26 @@ console.log(name);
 }
 console.log(age);
 
-// 3. Constant
+// 3. Constant, r(read only)
+// use const whenever possible.
+// only use let if variable needs to change.
+
+const daysInWeek = 7;
+const maxNumber = 5;
+
+// Note!
+// Immutalbe data types: primitive types, frozen objects (i.e. object.freeze())
+// Mutable data types: all objects by default are mutable in JS
 // favor immutable data type always for a few reasons:
 // - security
 // - thread safety
 // - reduc human mistakes
-const daysInWeek = 7;
-const maxNumber = 5;
 
 // 4. Variable types
-// primitive, single item: number, string, boolean, null, undefiedn, symbol 
+// primitive type, single item: number, string, boolean, null, undefiedn, symbol 
 // 더이상 작은 단위로 나눠질 수 없는 한가지 아이템 : ~~
 
-// object, box container
+// object type, box container
 // objcet는 싱글 아이템들을 여러개 묶어서 한 단위로, 한 박스로 관리해주는 것이 object
 
 // function, first-class function
